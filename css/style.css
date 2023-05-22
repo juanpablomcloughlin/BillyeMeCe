@@ -1,0 +1,342 @@
+/* Reseteo HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Google fonts */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(236, 238, 213);
+}
+
+/* formato comun a todas las paginas */
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+input:focus{
+    border: 2px solid black;
+}
+ 
+h2 {
+    color: brown;   
+    padding: 10px;
+}
+
+h3{
+    margin-left: 5px;
+}
+
+h4 {
+    padding: 5px;
+}
+
+p{
+    color: black;
+    font-size:small;
+    padding: 5px;
+}
+
+section article{
+    padding: 5px;
+}
+
+article{
+    padding: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* clases */
+.encabezado {
+    background-color: rgb(179,169,200)
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.bordesredondeados{
+    border-radius: 20px;
+}
+
+.seccion-principal-index{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 4;
+    grid-template-rows: 3;
+    grid-template-areas:
+    "principal principal principal aside"
+    "videos videos videos aside"
+    "posts posts posts aside";
+}
+
+
+.noticia-1{
+    display: flex;
+    padding: 10px 5px;
+    gap: 10px;
+    grid-area: principal;
+}
+
+.videos-mas-vistos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+    grid-area: videos;
+}
+
+.posts{
+    grid-area: posts;
+}
+
+.posts-mas-leidos{
+    display: flex;
+    padding: 5px 2px;
+    gap: 2px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    grid-area: aside;
+    margin-top: 10px;
+}
+
+.aside-mas-leido{
+    font-size: small;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* pagina novedades */
+.novedades{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+    grid-area: novedades;
+}
+
+.article-novedades{
+    display: flex;
+}
+
+.ultimos-videos{
+    display: flex;
+    flex-wrap: no-wrap;
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+}
+.seccion-principal-novedades{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+    "novedades aside"
+    "videos aside";
+}
+
+/* pagina videos */
+
+.seccion-principal-videos{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas:
+    "videos-mas aside"
+    "videos aside";
+}
+
+.videos-mas{
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+    grid-area: videos-mas;
+}
+
+/* pagina sobremi */
+.sobre-mi{
+    grid-area: sobre-mi;
+}
+
+.mis-trabajos{
+    grid-area: mis-trabajos;
+}
+
+.mis--trabajos{
+    display: flex;
+    align-items: center;
+}
+
+.seccion-principal-sobremi{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-self: auto;
+    grid-template-areas:
+    "sobre-mi aside"
+    "mis-trabajos aside";
+}   
+
+.billyemece{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* pagina contacto */
+.contactame{
+    grid-area: contactame;
+}
+
+.seccion-principal-contacto{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-self: auto;
+    grid-template-areas:
+    "contactame aside"
+    "form aside";
+}   
+
+.contact-me{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form{
+    grid-area: form;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(190, 152, 152);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Media queries */
+
+@media (max-width:768px){
+    header div img{
+        height: 50px;
+        width: 200px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        align-items: center;
+    }
+    div form input{
+        height: 50px;
+        width: 200px;
+    }
+    .seccion-principal-sobremi{
+    display: flex;
+    flex-direction: column;
+    }   
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:425px){
+
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div form{
+        padding-top: 10px;
+    }
+
+    h2{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    h3{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    p{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    div form input{
+        height: 30px;
+        width: 200px;
+    }
+
+    .billyemece{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .mis--trabajos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{ 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-principal-contacto{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    aside{
+        display: none;
+    }
+}

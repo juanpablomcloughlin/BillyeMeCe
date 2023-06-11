@@ -13,20 +13,6 @@ html {
 }
 
 /* formato comun a todas las paginas */
-header {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar li a:hover{
-    color: black;
-    text-decoration: underline;
-}
-
-input:focus{
-    border: 2px solid black;
-}
  
 h2 {
     color: brown;   
@@ -61,22 +47,13 @@ ul{
 
 
 /* clases */
-.encabezado {
-    background-color: rgb(179,169,200)
-}
-
-.navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
 
 .bordesredondeados{
     border-radius: 20px;
 }
 
 .seccion-principal-index{
+    padding-top: 80px;
     display: grid;
     height: 100hv;
     grid-template-columns: 4;
@@ -153,6 +130,7 @@ ul{
     gap: 4px;
 }
 .seccion-principal-novedades{
+    padding-top: 80px;
     display: grid;
     height: 100hv;
     grid-template-columns: 2;
@@ -165,6 +143,7 @@ ul{
 /* pagina videos */
 
 .seccion-principal-videos{
+    padding-top: 80px;
     display: grid;
     height: 100hv;
     grid-template-columns: 2;
@@ -195,6 +174,7 @@ ul{
 }
 
 .seccion-principal-sobremi{
+    padding-top: 70px;
     display: grid;
     height: 100hv;
     grid-template-columns: 2;
@@ -217,6 +197,7 @@ ul{
 }
 
 .seccion-principal-contacto{
+    padding-top: 70px;
     display: grid;
     height: 100hv;
     grid-template-columns: 2;
@@ -249,41 +230,131 @@ footer {
 /* Media queries */
 
 @media (max-width:768px){
-    header div img{
-        height: 50px;
-        width: 200px;
+    .seccion-principal-index{
+    padding-top: 70px;
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    grid-template-areas:
+    "principal principal"
+    "videos videos"
+    "posts posts"
+    "aside aside";
     }
-    .navbar ul{
+    
+    .seccion-principal-novedades{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seccion-principal-videos{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-video-ppal{
+        width: 760px;
+        height: 400px;
+    }
+    .videos-videos-secundarios{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
-    header{
-        align-items: center;
+    .noticia-1{
+        width: 760px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .noticia-ppal{
+        display: none;
+    }
+
+    .ult-video-3{
+        display: none;
+    }
+    .ultimos-videos{
+        width: 760px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .post-art-3{
+        display: none;
+    }
+
+    .posts-mas-leidos{
+        width: 760px;
+        display: flex;
+        justify-content: center;
+    }
+        
     }
     div form input{
         height: 50px;
         width: 200px;
     }
-    .seccion-principal-sobremi{
-    display: flex;
-    flex-direction: column;
-    }   
+
     aside {
         display: flex;
         flex-direction: column;
     }
-    footer{
-        padding-top: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 @media (max-width:425px){
 
-    .encabezado{
+    html body {
+        width: 425px;
+    }
+    
+    .seccion-principal-index{
+        width: 425px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .noticia-1{
+        width: 400px;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-ppal-425{
+        width: 370px;
+        height: 250;
+    }
+
+    .video-video-ppal{
+        width: 415px;
+        height: 250px;
+    }
+
+    .videos-videos-secundarios{
+        display: none;
+    }
+
+    .videos-mas-vistos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ult-video-2{
+        display: none;
+    }
+
+    .posts-mas-leidos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .posts-art-2{
+        display: none;
     }
 
     div form{
@@ -324,19 +395,11 @@ footer {
         flex-direction: column;
         justify-content: center;
     }
-
-    footer{ 
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .seccion-principal-contacto{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-
+    
     aside{
         display: none;
+    }   
+    .billy-copy{
+        display:none;
     }
 }

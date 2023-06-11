@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- fontawesome -->
@@ -21,26 +23,45 @@
 
     <!-- header -->
     <header class="encabezado">
-        <div>
-            <a href="../index.html"><img src="../assets/img/logo BillyeMeCe.png completo.png" width="100" height="25" alt="Logo de BillyeMeCe"></a>
-        </div>
-        <div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html" class="titulo">INICIO</a></li>
-                    <li><a href="./novedades.html" class="titulo">NOVEDADES</a></li>
-                    <li><a href="./videos.html"class="titulo">VIDEOS</a></li>
-                    <li><a href="./sobremi.html" class="titulo">SOBRE MI</a></li>
-                    <li><a href="./contacto.html" class="titulo">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo BillyeMeCe.png completo.png" width="100" height="25" alt="Logo de BillyeMeCe"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo BillyeMeCe.png completo.png" width="100" height="25" alt="Logo de BillyeMeCe"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./videos.html">Videos</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./sobremi.html">Sobre Mi</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div>
-            <form action="">
-                <input type="search" id="search" placeholder="Buscar posts">
-                <label for="search"></label> 
-            </form>
-        </div>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
     </header>   
 
     <!-- main -->
@@ -53,9 +74,9 @@
                     </h2>
                     <div class="videos-mas">
                         <div>
-                            <iframe width="900" height="500" src="https://www.youtube.com/embed/tT7LXQfYxh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="bordesredondeados" allowfullscreen></iframe>
+                            <iframe width="900" height="500" src="https://www.youtube.com/embed/tT7LXQfYxh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="bordesredondeados video-video-ppal" allowfullscreen></iframe>
                         </div>
-                        <div>
+                        <div class="videos-videos-secundarios">
                             <iframe width="450" height="240" src="https://www.youtube.com/embed/Hq6hTytqmGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="bordesredondeados"></iframe>
                             <iframe width="450" height="240" src="https://www.youtube.com/embed/yBSdbAzHNBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="bordesredondeados" allowfullscreen></iframe>
                         </div>
@@ -71,10 +92,10 @@
                         <div>
                             <iframe width="300" height="200" src="https://www.youtube.com/embed/mdGxCwe36G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="bordesredondeados"></iframe>
                         </div>
-                        <div>
+                        <div class="ult-video-2">
                             <iframe width="300" height="200" src="https://www.youtube.com/embed/yBSdbAzHNBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="bordesredondeados"  allowfullscreen></iframe>
                         </div>
-                        <div>
+                        <div class="ult-video-3">
                             <iframe width="300" height="200" src="https://www.youtube.com/embed/Hq6hTytqmGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="bordesredondeados"></iframe>
                         </div>
                     </div>
@@ -167,13 +188,14 @@
         </div>
 
         <!-- contacto y derechos -->
-        <div>
+        <div class="billy-copy"> 
             <h4>
                 © BillyeMeCe 2023 
             </h4>
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </body>
 </html>

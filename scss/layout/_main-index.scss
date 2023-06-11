@@ -1,0 +1,25 @@
+.seccion-principal-index{
+    @include grid(80px,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
+}
+.videos-mas-vistos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+    grid-area: videos;
+}
+.noticia-1{
+    display: flex;
+    padding: 10px 5px;
+    gap: 10px;
+    grid-area: principal;
+}
+.posts{
+    grid-area: posts;
+}
+
+.posts-mas-leidos{
+    display: flex;
+    padding: 5px 2px;
+    gap: 2px;
+}

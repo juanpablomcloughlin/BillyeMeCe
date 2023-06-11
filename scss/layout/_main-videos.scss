@@ -1,0 +1,9 @@
+.seccion-principal-videos{
+    @include grid(80px,2,2,"videos-mas aside""videos aside");
+}
+
+.videos-mas{
+    padding: 5px 2px 5px 5px;
+    gap: 4px;
+    grid-area: videos-mas;
+}

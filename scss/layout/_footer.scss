@@ -1,0 +1,14 @@
+footer {
+    background-color: $color-footer;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-nav {
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+            }
+        }

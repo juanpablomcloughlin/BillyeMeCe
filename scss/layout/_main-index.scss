@@ -1,17 +1,17 @@
 .seccion-principal-index{
-    @include grid(80px,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
+    @include grid(5rem,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
 }
 .videos-mas-vistos{
     display: flex;
     flex-wrap: wrap;
-    padding: 5px 2px 5px 5px;
-    gap: 4px;
+    padding: .3125rem .125rem .3125rem .3125rem;
+    gap: .25rem;
     grid-area: videos;
 }
 .noticia-1{
     display: flex;
-    padding: 10px 5px;
-    gap: 10px;
+    padding: .625rem .3125rem;
+    gap: .625rem;
     grid-area: principal;
 }
 .posts{
@@ -20,6 +20,6 @@
 
 .posts-mas-leidos{
     display: flex;
-    padding: 5px 2px;
-    gap: 2px;
+    padding: .3125rem .125rem;
+    gap: .125rem;
 }

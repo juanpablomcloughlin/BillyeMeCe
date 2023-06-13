@@ -8,24 +8,24 @@ html {
 
 h2 {
   color: brown;
-  padding: 10px; }
+  padding: .625rem; }
 
 h3 {
-  margin-left: 5px; }
+  margin-left: .3125rem; }
 
 h4 {
-  padding: 5px; }
+  padding: .3125rem; }
 
 p {
   color: black;
   font-size: small;
-  padding: 5px; }
+  padding: .3125rem; }
 
 section article {
-  padding: 5px; }
+  padding: .3125rem; }
 
 article {
-  padding: 5px; }
+  padding: .3125rem; }
 
 ul {
   list-style-type: none; }
@@ -34,7 +34,7 @@ ul li a {
   text-decoration: none; }
 
 .bordesredondeados {
-  border-radius: 20px; }
+  border-radius: 1.25rem; }
 
 .aside {
   display: flex;
@@ -42,7 +42,7 @@ ul li a {
   align-items: center;
   width: 100%;
   grid-area: aside;
-  margin-top: 10px; }
+  margin-top: .625rem; }
 
 .aside-mas-leido {
   font-size: small; }
@@ -54,7 +54,7 @@ html {
 .seccion-principal-index {
   display: grid;
   height: 100hv;
-  padding-top: 80px;
+  padding-top: 5rem;
   grid-template-columns: 4;
   grid-template-rows: 3;
   grid-template-areas: "principal principal principal aside" "videos videos videos aside" "posts posts posts aside"; }
@@ -62,14 +62,14 @@ html {
 .videos-mas-vistos {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 2px 5px 5px;
-  gap: 4px;
+  padding: .3125rem .125rem .3125rem .3125rem;
+  gap: .25rem;
   grid-area: videos; }
 
 .noticia-1 {
   display: flex;
-  padding: 10px 5px;
-  gap: 10px;
+  padding: .625rem .3125rem;
+  gap: .625rem;
   grid-area: principal; }
 
 .posts {
@@ -77,29 +77,28 @@ html {
 
 .posts-mas-leidos {
   display: flex;
-  padding: 5px 2px;
-  gap: 2px; }
+  padding: .3125rem .125rem;
+  gap: .125rem; }
 
 .novedades {
   display: flex;
   flex-direction: column;
-  padding: 5px 2px 5px 5px;
-  gap: 4px;
+  padding: .3125rem .125rem .3125rem .3125rem;
+  gap: .25rem;
   grid-area: novedades; }
 
-.article-novedades {
+.article-novedades, .ultimos-videos {
   display: flex; }
 
 .ultimos-videos {
-  display: flex;
   flex-wrap: no-wrap;
-  padding: 5px 2px 5px 5px;
-  gap: 4px; }
+  padding: .3125rem .125rem .3125rem .3125rem;
+  gap: .25rem; }
 
 .seccion-principal-novedades {
   display: grid;
   height: 100hv;
-  padding-top: 80px;
+  padding-top: 5rem;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "novedades aside" "videos aside"; }
@@ -107,14 +106,14 @@ html {
 .seccion-principal-videos {
   display: grid;
   height: 100hv;
-  padding-top: 80px;
+  padding-top: 5rem;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "videos-mas aside" "videos aside"; }
 
 .videos-mas {
-  padding: 5px 2px 5px 5px;
-  gap: 4px;
+  padding: .3125rem .125rem .3125rem .3125rem;
+  gap: .25rem;
   grid-area: videos-mas; }
 
 .sobre-mi {
@@ -130,7 +129,7 @@ html {
 .seccion-principal-sobremi {
   display: grid;
   height: 100hv;
-  padding-top: 70px;
+  padding-top: 4.375rem;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "sobre-mi aside" "mis-trabajos aside";
@@ -139,7 +138,7 @@ html {
 .billyemece {
   display: flex;
   align-items: center;
-  gap: 10px; }
+  gap: .625rem; }
 
 .contactame {
   grid-area: contactame; }
@@ -147,7 +146,7 @@ html {
 .seccion-principal-contacto {
   display: grid;
   height: 100hv;
-  padding-top: 70px;
+  padding-top: 4.375rem;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "contactame aside" "form aside";
@@ -156,15 +155,15 @@ html {
 .contact-me {
   display: flex;
   align-items: center;
-  gap: 10px; }
+  gap: .625rem; }
 
 .form {
   grid-area: form;
-  padding: 10px; }
+  padding: .625rem; }
 
 footer {
   background-color: #be9898;
-  padding: 5px;
+  padding: .3125rem;
   display: flex;
   justify-content: space-around; }
 
@@ -172,34 +171,37 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px; }
+  gap: 1.25rem; }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .seccion-principal-index {
-    padding-top: 70px;
+    padding-top: 4.375rem;
     display: grid;
     height: 100hv;
     grid-template-columns: 2;
     grid-template-rows: 4;
-    grid-template-areas: "principal principal" "videos videos" "posts posts" "aside aside"; }
+    grid-template-areas: "principal principal"
+ "videos videos"
+ "posts posts"
+ "aside aside"; }
   .seccion-principal-novedades {
-    padding-top: 70px;
+    padding-top: 4.375rem;
     display: flex;
     flex-direction: column; }
   .seccion-principal-videos {
-    padding-top: 70px;
+    padding-top: 4.375rem;
     display: flex;
     flex-direction: column; }
   .video-video-ppal {
-    width: 760px;
-    height: 400px; }
+    width: 47.5rem;
+    height: 25rem; }
   .videos-videos-secundarios {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5px; }
+    gap: .3125rem; }
   .noticia-1 {
-    width: 760px;
+    width: 47.5rem;
     display: flex;
     justify-content: center; }
   .noticia-ppal {
@@ -207,43 +209,44 @@ footer {
   .ult-video-3 {
     display: none; }
   .ultimos-videos {
-    width: 760px;
+    width: 47.5rem;
     display: flex;
     justify-content: center; }
   .post-art-3 {
     display: none; }
   .posts-mas-leidos {
-    width: 760px;
+    width: 47.5rem;
     display: flex;
     justify-content: center; } }
 
 div form input {
-  height: 50px;
-  width: 200px; }
+  height: 3.125rem;
+  width: 12.5rem; }
 
 aside {
   display: flex;
   flex-direction: column; }
 
-@media (max-width: 425px) {
+@media (max-width: 26.5625rem) {
   html body {
-    width: 425px; }
+    width: 26.5625rem; }
   .seccion-principal-index {
-    width: 425px;
+    width: 26.5625rem;
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .noticia-1 {
-    width: 400px;
-    height: 320px;
+    width: 25rem;
+    height: 20rem;
     display: flex;
     justify-content: center; }
   .video-ppal-425 {
-    width: 370px;
-    height: 250px; }
+    width: 23.125rem;
+    height: 15.625rem; }
   .video-video-ppal {
-    width: 415px;
-    height: 250px; }
+    width: 25.9375rem;
+    height: 15.625rem; }
   .videos-videos-secundarios {
     display: none; }
   .videos-mas-vistos {
@@ -257,7 +260,7 @@ aside {
   .posts-art-2 {
     display: none; }
   div form {
-    padding-top: 10px; }
+    padding-top: .625rem; }
   h2 {
     display: flex;
     align-content: center;
@@ -271,8 +274,8 @@ aside {
     align-content: center;
     justify-content: center; }
   div form input {
-    height: 30px;
-    width: 200px; }
+    height: 1.875rem;
+    width: 12.5rem; }
   .billyemece {
     display: flex;
     flex-direction: column-reverse;

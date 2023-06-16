@@ -1,0 +1,21 @@
+.sobre-mi{
+    grid-area: sobre-mi;
+}
+
+.mis-trabajos{
+    grid-area: mis-trabajos;
+}
+
+.mis--trabajos{
+    @include flex;
+}
+
+.seccion-principal-sobremi{
+    @include grid(70px,2,2,"sobre-mi aside""mis-trabajos aside");
+    justify-self: auto;
+    }   
+
+.billyemece{
+    @include flex;
+    gap: 10px;
+}

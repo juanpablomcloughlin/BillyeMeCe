@@ -5,7 +5,6 @@
 
 @mixin grid($padding,$col,$row,$area){
     display: grid;
-    width: 100hv;
     height: 100hv;
     padding-top: $padding;
     grid-template-columns: $col;

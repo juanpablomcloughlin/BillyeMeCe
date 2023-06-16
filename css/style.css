@@ -4,28 +4,29 @@
   box-sizing: border-box; }
 
 html {
-  background-color: #eceed5; }
+  background-color: #eceed5;
+  max-width: 100%; }
 
 h2 {
   color: brown;
-  padding: .625rem; }
+  padding: 10px; }
 
 h3 {
-  margin-left: .3125rem; }
+  margin-left: 5px; }
 
 h4 {
-  padding: .3125rem; }
+  padding: 5px; }
 
 p {
   color: black;
   font-size: small;
-  padding: .3125rem; }
+  padding: 5px; }
 
 section article {
-  padding: .3125rem; }
+  padding: 5px; }
 
 article {
-  padding: .3125rem; }
+  padding: 5px; }
 
 ul {
   list-style-type: none; }
@@ -34,7 +35,7 @@ ul li a {
   text-decoration: none; }
 
 .bordesredondeados {
-  border-radius: 1.25rem; }
+  border-radius: 20px; }
 
 .aside {
   display: flex;
@@ -42,7 +43,7 @@ ul li a {
   align-items: center;
   width: 100%;
   grid-area: aside;
-  margin-top: .625rem; }
+  margin-top: 10px; }
 
 .aside-mas-leido {
   font-size: small; }
@@ -53,14 +54,17 @@ html {
 
 .seccion-principal-index {
   display: grid;
+  width: 100hv;
   height: 100hv;
-  padding-top: 5rem;
+  padding-top: 80px;
   grid-template-columns: 4;
   grid-template-rows: 3;
   grid-template-areas: "principal principal principal aside" "videos videos videos aside" "posts posts posts aside"; }
 
 .videos-mas-vistos {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   padding: .3125rem .125rem .3125rem .3125rem;
   gap: .25rem;
@@ -68,6 +72,7 @@ html {
 
 .noticia-1 {
   display: flex;
+  justify-content: center;
   padding: .625rem .3125rem;
   gap: .625rem;
   grid-area: principal; }
@@ -83,8 +88,8 @@ html {
 .novedades {
   display: flex;
   flex-direction: column;
-  padding: .3125rem .125rem .3125rem .3125rem;
-  gap: .25rem;
+  padding: 5px 2px 5px 5px;
+  gap: 4px;
   grid-area: novedades; }
 
 .article-novedades, .ultimos-videos {
@@ -92,28 +97,30 @@ html {
 
 .ultimos-videos {
   flex-wrap: no-wrap;
-  padding: .3125rem .125rem .3125rem .3125rem;
-  gap: .25rem; }
+  padding: 5px 2px 5px 10px;
+  gap: 4px; }
 
 .seccion-principal-novedades {
   display: grid;
+  width: 100hv;
   height: 100hv;
-  padding-top: 5rem;
+  padding-top: 80px;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "novedades aside" "videos aside"; }
 
 .seccion-principal-videos {
   display: grid;
+  width: 100hv;
   height: 100hv;
-  padding-top: 5rem;
+  padding-top: 80px;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "videos-mas aside" "videos aside"; }
 
 .videos-mas {
-  padding: .3125rem .125rem .3125rem .3125rem;
-  gap: .25rem;
+  padding: 5px 2px 5px 5px;
+  gap: 4px;
   grid-area: videos-mas; }
 
 .sobre-mi {
@@ -128,8 +135,9 @@ html {
 
 .seccion-principal-sobremi {
   display: grid;
+  width: 100hv;
   height: 100hv;
-  padding-top: 4.375rem;
+  padding-top: 70px;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "sobre-mi aside" "mis-trabajos aside";
@@ -138,15 +146,16 @@ html {
 .billyemece {
   display: flex;
   align-items: center;
-  gap: .625rem; }
+  gap: 10px; }
 
 .contactame {
   grid-area: contactame; }
 
 .seccion-principal-contacto {
   display: grid;
+  width: 100hv;
   height: 100hv;
-  padding-top: 4.375rem;
+  padding-top: 70px;
   grid-template-columns: 2;
   grid-template-rows: 2;
   grid-template-areas: "contactame aside" "form aside";
@@ -155,15 +164,15 @@ html {
 .contact-me {
   display: flex;
   align-items: center;
-  gap: .625rem; }
+  gap: 10px; }
 
 .form {
   grid-area: form;
-  padding: .625rem; }
+  padding: 10px; }
 
 footer {
   background-color: #be9898;
-  padding: .3125rem;
+  padding: 5px;
   display: flex;
   justify-content: space-around; }
 
@@ -171,96 +180,73 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1.25rem; }
+  gap: 20px; }
 
-@media (max-width: 48rem) {
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.335) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.335) both; }
+
+.slide-fwd-center {
+  -webkit-animation: slide-fwd-center 0.45s ease-in both;
+  animation: slide-fwd-center 0.45s ease-in both; }
+
+@media (max-width: 768px) {
   .seccion-principal-index {
-    padding-top: 4.375rem;
+    padding-top: 70px;
     display: grid;
-    height: 100hv;
     grid-template-columns: 2;
     grid-template-rows: 4;
-    grid-template-areas: "principal principal"
- "videos videos"
- "posts posts"
- "aside aside"; }
+    grid-template-areas: "principal principal" "videos videos" "posts posts" "aside aside"; }
+  h2 {
+    padding: 0px; }
+  .posts {
+    display: none; }
   .seccion-principal-novedades {
-    padding-top: 4.375rem;
+    padding-top: 70px;
     display: flex;
     flex-direction: column; }
   .seccion-principal-videos {
-    padding-top: 4.375rem;
+    padding-top: 70px;
     display: flex;
     flex-direction: column; }
   .video-video-ppal {
-    width: 47.5rem;
-    height: 25rem; }
+    width: 760px;
+    height: 400px; }
   .videos-videos-secundarios {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: .3125rem; }
+    gap: 5px; }
   .noticia-1 {
-    width: 47.5rem;
+    width: 760px;
     display: flex;
     justify-content: center; }
+  .videos-mas-vistos {
+    width: auto; }
   .noticia-ppal {
     display: none; }
   .ult-video-3 {
     display: none; }
   .ultimos-videos {
-    width: 47.5rem;
+    width: 760px;
     display: flex;
     justify-content: center; }
   .post-art-3 {
-    display: none; }
-  .posts-mas-leidos {
-    width: 47.5rem;
-    display: flex;
-    justify-content: center; } }
+    display: none; } }
 
 div form input {
-  height: 3.125rem;
-  width: 12.5rem; }
+  height: 50px;
+  width: 200px; }
 
-aside {
+.aside {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: auto; }
 
-@media (max-width: 26.5625rem) {
-  html body {
-    width: 26.5625rem; }
-  .seccion-principal-index {
-    width: 26.5625rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: center; }
-  .noticia-1 {
-    width: 25rem;
-    height: 20rem;
-    display: flex;
-    justify-content: center; }
-  .video-ppal-425 {
-    width: 23.125rem;
-    height: 15.625rem; }
-  .video-video-ppal {
-    width: 25.9375rem;
-    height: 15.625rem; }
-  .videos-videos-secundarios {
-    display: none; }
-  .videos-mas-vistos {
-    display: flex;
-    justify-content: center; }
-  .ult-video-2 {
-    display: none; }
-  .posts-mas-leidos {
-    display: flex;
-    justify-content: center; }
-  .posts-art-2 {
-    display: none; }
-  div form {
-    padding-top: .625rem; }
+@media (max-width: 425px) {
+  body {
+    width: 100%;
+    height: auto; }
   h2 {
     display: flex;
     align-content: center;
@@ -273,9 +259,61 @@ aside {
     display: flex;
     align-content: center;
     justify-content: center; }
+  .seccion-principal-index {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center; }
+  .videos-mas-vistos {
+    width: 425px;
+    padding: 0px;
+    gap: 0px; }
+  .ult-video-1 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: auto; }
+  .ultimos-videos {
+    width: 100%; }
+  .ult-video-2 {
+    display: none; }
+  .posts-mas-leidos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .seccion-principal-contacto {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center; }
+  .contacto-425 {
+    width: 100%;
+    height: auto; }
+  .noticia-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; }
+  .video-ppal-425 {
+    width: 100%;
+    height: 300px; }
+  .video-video-ppal {
+    width: 100%;
+    height: 250px; }
+  .videos-videos-secundarios {
+    display: none; }
+  .posts-art-2 {
+    display: none; }
+  div form {
+    padding-top: 10px; }
+  .h2-sobremi {
+    display: none; }
   div form input {
-    height: 1.875rem;
-    width: 12.5rem; }
+    height: 30px;
+    width: 200px; }
   .billyemece {
     display: flex;
     flex-direction: column-reverse;
@@ -284,7 +322,15 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  aside {
+  .contactame {
+    display: none; }
+  .contact-me {
+    display: none; }
+  .h2-425 {
+    display: none; }
+  .aside {
     display: none; }
   .billy-copy {
+    display: none; }
+  .redes {
     display: none; } }

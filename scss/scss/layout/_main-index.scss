@@ -1,10 +1,8 @@
 .seccion-principal-index{
-    @include grid(80px,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
+    @include grid(5rem,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
 }
 .videos-mas-vistos{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     padding: .3125rem .125rem .3125rem .3125rem;
     gap: .25rem;
@@ -12,7 +10,6 @@
 }
 .noticia-1{
     display: flex;
-    justify-content: center;
     padding: .625rem .3125rem;
     gap: .625rem;
     grid-area: principal;

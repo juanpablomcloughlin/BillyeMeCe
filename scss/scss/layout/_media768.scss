@@ -2,6 +2,7 @@
     .seccion-principal-index{
     padding-top: 70px;
     display: grid;
+    height: 100hv;
     grid-template-columns: 2;
     grid-template-rows: 4;
     grid-template-areas:
@@ -10,13 +11,7 @@
     "posts posts"
     "aside aside";
     }
-    h2{
-        padding: 0px;
-    }
-    .posts{
-        display:none;
-    }
-
+    
     .seccion-principal-novedades{
         padding-top: 70px;
         display: flex;
@@ -43,10 +38,7 @@
         display: flex;
         justify-content: center;
     }
-    .videos-mas-vistos{
-        width: auto;
-    }
-    
+
     .noticia-ppal{
         display: none;
     }
@@ -64,7 +56,11 @@
         display: none;
     }
 
-    
+    .posts-mas-leidos{
+        width: 760px;
+        display: flex;
+        justify-content: center;
+    }
         
     }
     div {
@@ -76,8 +72,7 @@
         }
     }
 
-    .aside {
+    aside {
         display: flex;
         flex-direction: column;
-        width: auto;
     }

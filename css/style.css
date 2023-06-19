@@ -364,6 +364,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  .cont-billy {
+    display: none; }
   .h2-425 {
     display: none; }
   .aside {

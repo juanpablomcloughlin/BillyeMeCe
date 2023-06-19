@@ -421,6 +421,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .ult-video-2-nov {
+    display: none; }
   .ult-video-1 {
     display: flex;
     justify-content: center;

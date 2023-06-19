@@ -1,21 +1,32 @@
 .seccion-principal-index{
-    @include grid(80px,4,3,"principal principal principal aside""videos videos videos aside""posts posts posts aside");
+    @include grid(5rem,auto auto auto,75% 25%,
+    "principal aside"
+    "videos aside"
+    "posts aside");
+}
+.noticia-1{
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+    gap: 10px;
+    grid-area: principal;
+}
+.responsive-image{
+    width: 400px;
+    height: 300px;
+}
+.responsive-video{
+    width: 400px;
+    height: 300px;
 }
 .videos-mas-vistos{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: .3125rem .125rem .3125rem .3125rem;
-    gap: .25rem;
+    padding: 5px 2px 5px 5px;
+    gap: 10px;
     grid-area: videos;
-}
-.noticia-1{
-    display: flex;
-    justify-content: center;
-    padding: .625rem .3125rem;
-    gap: .625rem;
-    grid-area: principal;
 }
 .posts{
     grid-area: posts;
@@ -23,6 +34,6 @@
 
 .posts-mas-leidos{
     display: flex;
-    padding: .3125rem .125rem;
-    gap: .125rem;
+    padding: 5px 2px;
+    gap: 2px;
 }

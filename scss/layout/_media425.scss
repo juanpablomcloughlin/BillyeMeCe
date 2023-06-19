@@ -25,6 +25,14 @@
         @include flex;
         flex-direction: column;
         align-items: center;
+        width: auto;
+    }
+    .seccion-principal-novedades{
+        width: auto;
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
     }
     .videos-mas-vistos{
         width: 425px;
@@ -34,13 +42,18 @@
     .ult-video-1{
         display: flex;
         justify-content: center;
-        width: 300px;
+        width: 425px;
+        padding: 0px;
+        gap: 0px;
         height: auto;
     }
     .ultimos-videos{
         width: 100%;
     }
     .ult-video-2{
+        display: none;
+    }
+    .ult-video-2-nov{
         display: none;
     }
     .posts-mas-leidos{
@@ -50,6 +63,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .seccion-principal-contacto{
         width: auto;
         height: auto;
@@ -65,29 +79,37 @@
         display: flex;
         justify-content: center;
     }
+
     .video-ppal-425{
         width: 100%;
         height: 300px;
     }
+
     .video-video-ppal{
         width: 100%;
         height: 250px;
     }
+
     .videos-videos-secundarios{
         display: none;
     }
+
     .posts-art-2{
         display: none;
     }
+
     div {
         form{
         padding-top: 10px;
         }
     }
+    
+
     .h2-sobremi{
         display: none;
     }
     
+
     div {
         form {
             input{
@@ -124,6 +146,6 @@
         display:none;
     }
     .redes{
-        display: none;
+        display:none;
     }
 }

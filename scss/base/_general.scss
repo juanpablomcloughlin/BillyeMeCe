@@ -1,6 +1,5 @@
 html {
     background-color: $color-principal;
-    max-width: 100%;
 }
 
 h2 {
@@ -50,7 +49,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     grid-area: aside;
     margin-top: 10px;
 }

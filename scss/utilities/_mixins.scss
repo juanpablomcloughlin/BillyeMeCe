@@ -3,12 +3,10 @@
     align-items: center;
 }
 
-@mixin grid($padding,$col,$row,$area){
+@mixin grid($padding,$row,$col,$area){
     display: grid;
-    width: 100hv;
-    height: 100hv;
     padding-top: $padding;
-    grid-template-columns: $col;
     grid-template-rows: $row;
+    grid-template-columns: $col;
     grid-template-areas: $area;
 }

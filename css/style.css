@@ -118,16 +118,13 @@ html {
   padding-right: 5px; }
 
 .videos-mas {
-  padding: 5px 2px 5px 5px;
-  gap: 4px;
-  grid-area: videos-mas; }
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.seccion-principal-videos {
-  display: grid;
-  padding-top: 5rem;
-  grid-template-rows: 65% 35%;
-  grid-template-columns: 70% 30%;
-  grid-template-areas: "videos-mas aside" "videos aside"; }
+.aside-videos {
+  display: none; }
 
 .sobre-mi {
   grid-area: sobre-mi; }
@@ -194,11 +191,10 @@ footer {
 
 @media (max-width: 1024px) {
   .seccion-principal-index {
-    display: grid;
-    padding-top: 5rem;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 70% 30%;
-    grid-template-areas: "principal aside" "videos aside" "posts aside"; }
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .seccion-principal-novedades {
     display: grid;
     padding-top: 5rem;
@@ -208,6 +204,8 @@ footer {
   .responsive-image {
     display: none; }
   .ult-video-2 {
+    display: none; }
+  .aside {
     display: none; }
   .aside-videos {
     display: none; }
@@ -224,9 +222,8 @@ footer {
 
 @media (max-width: 768px) {
   .seccion-principal-index {
-    width: auto;
+    padding-top: 40px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: center; }
   .seccion-principal-novedades {
@@ -235,8 +232,6 @@ footer {
     flex-direction: column; }
   h2 {
     padding: 0px; }
-  .posts {
-    display: none; }
   .seccion-principal-videos {
     padding-top: 70px;
     display: flex;
@@ -269,9 +264,10 @@ footer {
   div form input {
     height: 50px;
     width: 200px; }
+  .ult-video-2 {
+    display: none; }
   .aside {
-    display: flex;
-    flex-direction: column; } }
+    display: none; } }
 
 @media (max-width: 425px) {
   body {
@@ -290,12 +286,10 @@ footer {
     align-content: center;
     justify-content: center; }
   .seccion-principal-index {
-    width: auto;
+    padding-top: 40px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    align-items: center;
-    width: auto; }
+    align-items: center; }
   .seccion-principal-novedades {
     width: auto;
     display: flex;
@@ -380,9 +374,8 @@ footer {
     width: auto;
     height: auto; }
   .seccion-principal-index {
-    width: auto;
+    padding-top: 40px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: center; }
   .responsive-video {
@@ -406,9 +399,8 @@ footer {
     width: 100vw;
     height: 100vh; }
   .seccion-principal-index {
-    width: auto;
+    padding-top: 40px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: center; }
   .responsive-video {

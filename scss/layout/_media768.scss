@@ -1,10 +1,10 @@
 @media (max-width:768px){
     .seccion-principal-index{
-            width: auto;
-            @include flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .seccion-principal-novedades{
             padding-top: 70px;
             display: flex;
@@ -14,10 +14,7 @@
     h2{
         padding: 0px;
     }
-    .posts{
-        display:none;
-    }
-   
+    
     .seccion-principal-videos{
         padding-top: 70px;
         display: flex;
@@ -67,9 +64,10 @@
             }
         }
     }
-
+.ult-video-2{
+    display: none;
+}
     .aside {
-        display:flex;
-        flex-direction: column;
-    }
+        display:none;
+}
 }

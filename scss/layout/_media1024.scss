@@ -1,9 +1,9 @@
 @media (max-width:1024px){
 .seccion-principal-index{
-    @include grid(5rem,auto auto auto,70% 30%,
-    "principal aside"
-    "videos aside"
-    "posts aside");
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .seccion-principal-novedades{
     @include grid (5rem,auto auto,60% 40%,
@@ -14,6 +14,9 @@
     display: none;
 }
 .ult-video-2{
+    display: none;
+}
+.aside{
     display: none;
 }
 .aside-videos{

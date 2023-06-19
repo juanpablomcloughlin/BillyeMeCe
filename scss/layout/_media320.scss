@@ -1,7 +1,7 @@
 @media (max-width:320px){
 body {
-        width: auto;
-        height: auto;
+        width: 100vw;
+        height: 100vh;
         }
 
 .seccion-principal-index{
@@ -21,7 +21,7 @@ body {
     align-items: center;
 }
 .ult-video-2-nov{
-    display: none;
+    display: n
 }
 .ult-video-1{
     display: flex;

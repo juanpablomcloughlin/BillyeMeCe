@@ -89,12 +89,8 @@ html {
   padding: 5px 2px;
   gap: 2px; }
 
-.seccion-principal-novedades {
-  display: grid;
-  padding-top: 5rem;
-  grid-template-rows: auto auto;
-  grid-template-columns: 65% 35%;
-  grid-template-areas: "novedades aside" "videos aside"; }
+.h2-nov {
+  padding-top: 100px; }
 
 .novedades {
   display: flex;
@@ -114,40 +110,30 @@ html {
 .ult-video-3 {
   display: none; }
 
-.aside {
-  padding-right: 5px; }
-
 .videos-mas {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.aside-videos {
-  display: none; }
-
-.sobre-mi {
-  grid-area: sobre-mi; }
-
-.mis-trabajos {
-  grid-area: mis-trabajos; }
+.seccion-principal-sobremi {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .mis--trabajos {
   display: flex;
-  align-items: center; }
-
-.seccion-principal-sobremi {
-  display: grid;
-  padding-top: 70px;
-  grid-template-rows: 2;
-  grid-template-columns: 2;
-  grid-template-areas: "sobre-mi aside" "mis-trabajos aside";
-  justify-self: auto; }
+  align-items: center;
+  justify-content: space-between; }
 
 .billyemece {
   display: flex;
   align-items: center;
   gap: 10px; }
+
+.h2-sobremi {
+  display: none; }
 
 .contactame {
   grid-area: contactame; }
@@ -191,23 +177,20 @@ footer {
 
 @media (max-width: 1024px) {
   .seccion-principal-index {
-    padding-top: 10px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .seccion-principal-novedades {
-    display: grid;
-    padding-top: 5rem;
-    grid-template-rows: auto auto;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "novedades aside" "videos aside"; }
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .responsive-image {
     display: none; }
+  .h2-425 {
+    display: none; }
   .ult-video-2 {
-    display: none; }
-  .aside {
-    display: none; }
-  .aside-videos {
     display: none; }
   .seccion-principal-videos {
     display: flex;
@@ -218,7 +201,9 @@ footer {
     flex-direction: column;
     align-items: center; }
   .ult-video-2 {
-    display: flex; } }
+    display: flex; }
+  .aside {
+    display: none; } }
 
 @media (max-width: 768px) {
   .seccion-principal-index {
@@ -265,8 +250,6 @@ footer {
     height: 50px;
     width: 200px; }
   .ult-video-2 {
-    display: none; }
-  .aside {
     display: none; } }
 
 @media (max-width: 425px) {
@@ -298,7 +281,7 @@ footer {
     align-items: center;
     width: auto; }
   .videos-mas-vistos {
-    width: 425px;
+    width: 420px;
     padding: 0px;
     gap: 0px; }
   .ult-video-1 {
@@ -345,8 +328,6 @@ footer {
     display: none; }
   div form {
     padding-top: 10px; }
-  .h2-sobremi {
-    display: none; }
   div form input {
     height: 30px;
     width: 200px; }
@@ -396,8 +377,8 @@ footer {
 
 @media (max-width: 320px) {
   body {
-    width: 100vw;
-    height: 100vh; }
+    width: 320px;
+    height: auto; }
   .seccion-principal-index {
     padding-top: 40px;
     display: flex;
@@ -419,4 +400,10 @@ footer {
     width: 300px;
     padding: 0px;
     gap: 0px;
+    height: auto; }
+  .sobre-mi {
+    width: 320px;
+    height: auto; }
+  .billyemece {
+    width: 310px;
     height: auto; } }

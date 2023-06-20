@@ -1,21 +1,18 @@
-.sobre-mi{
-    grid-area: sobre-mi;
+.seccion-principal-sobremi{
+    padding-top:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.mis-trabajos{
-    grid-area: mis-trabajos;
-}
-
 .mis--trabajos{
     @include flex;
+    justify-content: space-between;
 }
-
-.seccion-principal-sobremi{
-    @include grid(70px,2,2,"sobre-mi aside""mis-trabajos aside");
-    justify-self: auto;
-    }   
 
 .billyemece{
     @include flex;
     gap: 10px;
+}
+.h2-sobremi{
+    display:none;
 }

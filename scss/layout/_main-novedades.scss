@@ -4,9 +4,6 @@
 .novedades{
     display: flex;
     flex-direction: column;
-    padding: 5px 2px 5px 5px;
-    gap: 4px;
-    grid-area: novedades;
 }
 
 .article-novedades{
@@ -16,8 +13,6 @@
 .ultimos-videos{
     @extend .article-novedades;
     flex-wrap: no-wrap;
-    padding: 5px 2px 5px 10px;
-    gap: 4px;
 }
 .ult-video-3{
     display: none;

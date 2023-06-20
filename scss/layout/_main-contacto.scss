@@ -9,10 +9,8 @@
 
 .contact-me{
     @include flex;
-    gap: 10px;
 }
 
 .form{
     grid-area: form;
-    padding: 10px;
 }

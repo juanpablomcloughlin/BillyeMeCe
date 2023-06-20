@@ -18,16 +18,6 @@ h4 {
 p{
     color: $color-p;
     font-size:small;
-    padding: 5px;
-}
-section {
-    article{
-            padding: 5px;
-    }
-}
-
-article{
-    padding: 5px;
 }
 
 ul{
@@ -43,16 +33,4 @@ ul {
 }
 .bordesredondeados{
     border-radius: 20px;
-}
-
-.aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: aside;
-    margin-top: 10px;
-}
-
-.aside-mas-leido{
-    font-size: small;
 }

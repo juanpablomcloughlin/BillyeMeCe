@@ -1,14 +1,12 @@
 .seccion-principal-index{
-    @include grid(5rem,auto auto auto,75% 25%,
-    "principal aside"
-    "videos aside"
-    "posts aside");
-}
+        padding-top:60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 .noticia-1{
     display: flex;
     justify-content: center;
-    padding: 10px 5px;
-    gap: 10px;
     grid-area: principal;
 }
 .responsive-image{

@@ -33,6 +33,9 @@ html {
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Slab', serif; }
 
+main {
+  overflow: z-index; }
+
 .seccion-principal-index {
   padding-top: 60px;
   display: flex;
@@ -69,6 +72,9 @@ html {
   padding: 5px 2px;
   gap: 2px; }
 
+main {
+  overflow: z-index; }
+
 .h2-nov {
   padding-top: 100px; }
 
@@ -85,11 +91,17 @@ html {
 .ult-video-3 {
   display: none; }
 
+main {
+  overflow: z-index; }
+
 .videos-mas {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center; }
+
+main {
+  overflow: z-index; }
 
 .seccion-principal-sobremi {
   padding-top: 60px;
@@ -108,6 +120,9 @@ html {
 
 .h2-sobremi {
   display: none; }
+
+main {
+  overflow: z-index; }
 
 .contactame {
   grid-area: contactame; }

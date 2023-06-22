@@ -1,5 +1,5 @@
 main{
-    overflow: z-index;
+    overflow-x: hidden;
 }
 .seccion-principal-index{
         padding-top:60px;
@@ -10,31 +10,38 @@ main{
 .noticia-1{
     display: flex;
     justify-content: center;
-    grid-area: principal;
 }
 .responsive-image{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
+    padding-right: .3125rem;
 }
 .responsive-video{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
+    padding-left: .3125rem;
 }
 .videos-mas-vistos{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px 2px 5px 5px;
-    gap: 10px;
-    grid-area: videos;
+}
+.ult-video-visto-1{
+    width: 500px;
+    height: 400px;
+    padding-right: .3125rem;
+}
+.ult-video-visto-2{
+    width: 500px;
+    height: 400px;
+    padding-left: .3125rem;
 }
 .posts{
-    grid-area: posts;
+    padding-left: .625rem;
+    padding-top: 10px;
 }
-
 .posts-mas-leidos{
     display: flex;
-    padding: 5px 2px;
-    gap: 2px;
+    padding: .625rem .125rem;
 }

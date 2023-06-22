@@ -1,9 +1,39 @@
 main{
-    overflow: z-index;
+    overflow-x: hidden;
+}
+.seccion-principal-videos{
+    padding-top: 80px;
+    padding-left: 10px;
+}
+.videos-videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-video-ppal{
+    width:900px;
+    height: 500px; 
+}
+.video-secundario-1 {
+    width:450px;
+    height: 240px;
+}
+.video-secundario-2{
+    @extend .video-secundario-1
 }
 .videos-mas{
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.ult-video-video-1{
+    width: 300px;
+    height: 200px; 
+}
+.ult-video-video-2{
+    @extend .ult-video-video-1;
+}
+.ult-video-video-3{
+    @extend .ult-video-video-1;
 }

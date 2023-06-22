@@ -1,22 +1,27 @@
 main{
-    overflow: z-index;
+    overflow-x: hidden;
 }
-.h2-nov{
+.h1-nov{
     padding-top: 100px;
 }
 .novedades{
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .article-novedades{
     display: flex;
+    padding: 5px;
+    gap: 5px;
 }
 
 .ultimos-videos{
     @extend .article-novedades;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.ult-video-3{
-    display: none;
+.ult-video-nov{
+    width: 400px;
+    height: 300px; 
 }

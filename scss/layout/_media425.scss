@@ -3,8 +3,7 @@
         width: 100%;
         height: auto;
         }
-    
-    h2{
+    h1{
         display:flex;
         align-content: center;
         justify-content: center;
@@ -14,7 +13,6 @@
         align-content: center;
         justify-content: center;
     }
-
     p{
         display:flex;
         align-content: center;
@@ -26,6 +24,14 @@
         flex-direction: column;
         align-items: center;
     }
+    .responsive-video{
+        width: 350px;
+        height: 300px;
+    }
+    .ult-video-visto-1{
+        width: 350px;
+        height: 300px;
+    }
     .seccion-principal-novedades{
         width: auto;
         @include flex;
@@ -33,18 +39,11 @@
         align-items: center;
         width: auto;
     }
+    .seccion-principal-videos{
+        padding-left: 0px;
+    }
     .videos-mas-vistos{
         width: 420px;
-        padding: 0px;
-        gap: 0px;
-    }
-    .ult-video-1{
-        display: flex;
-        justify-content: center;
-        width: 425px;
-        padding: 0px;
-        gap: 0px;
-        height: auto;
     }
     .ultimos-videos{
         width: 100%;
@@ -62,7 +61,6 @@
         flex-direction: column;
         align-items: center;
     }
-
     .seccion-principal-contacto{
         width: auto;
         height: auto;
@@ -78,31 +76,33 @@
         display: flex;
         justify-content: center;
     }
-
     .video-ppal-425{
         width: 100%;
         height: 300px;
     }
-
     .video-video-ppal{
-        width: 100%;
+        width: 400px;
         height: 250px;
     }
-
+    .ult-video-video-1{
+        width: 400px;
+        height: 250px;
+    }
+    .ult-video-video-2{
+        width: 400px;
+        height: 250px;
+    }
     .videos-videos-secundarios{
         display: none;
     }
-
     .posts-art-2{
         display: none;
     }
-
     div {
         form{
         padding-top: 10px;
         }
-    }
-    
+    }  
     div {
         form {
             input{
@@ -111,13 +111,11 @@
                 }
             }
         }
-
     .billyemece{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
     }
-
     .mis--trabajos{
         display: flex;
         flex-direction: column;
@@ -128,10 +126,7 @@
     }
     .h2-425{
         display:none;
-    }
-    .aside{
-        display: none;
-    }   
+    } 
     .billy-copy{
         display:none;
     }

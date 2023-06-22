@@ -10,20 +10,21 @@
             display: flex;
             flex-direction: column;
         }
-    
-    h2{
-        padding: 0px;
-    }
-    
     .seccion-principal-videos{
         padding-top: 70px;
         display: flex;
         flex-direction: column;
     }
     .video-video-ppal{
-        width: 760px;
-        height: 400px;
+        width: 700px;
+        height: 400px; 
     }
+    .video-secundario-1 {
+        width: 450px;
+        height: 240px;
+        padding-bottom: 10px;
+    }
+
     .videos-videos-secundarios{
         @include flex;
         flex-direction: column;
@@ -42,16 +43,14 @@
     .noticia-ppal{
         display: none;
     }
-
-    .ult-video-3{
-        display: none;
-    }
     .ultimos-videos{
         width: auto;
         display: flex;
         justify-content: center;
     }
-    
+    .ult-video-2{
+        display: none;
+    }
     .post-art-3{
         display: none;
     }
@@ -64,8 +63,5 @@
             }
         }
     }
-.ult-video-2{
-    display: none;
-}
 
 }

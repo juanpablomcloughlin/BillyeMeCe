@@ -1,19 +1,14 @@
 main{
-    overflow: z-index;
+    overflow-x: hidden;
 }
 .contactame{
-    grid-area: contactame;
+    padding: 70px 10px 10px 10px;
 }
-
-.seccion-principal-contacto{
-    @include grid(70px,2,2,"contactame aside""form aside"); 
-    justify-self: auto;
-}   
 
 .contact-me{
     @include flex;
+    gap: 15px;
 }
-
 .form{
-    grid-area: form;
+    padding: 20px;
 }

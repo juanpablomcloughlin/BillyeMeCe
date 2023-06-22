@@ -11,24 +11,13 @@
     flex-direction: column;
     align-items: center;
 }
-.responsive-image{
-    display: none;
-}
 .h2-425{
     display:none;
 }
-.ult-video-2{
-    display: none;
-}
-
 .seccion-principal-videos{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.novedades{
-    gap: 0px;
-    padding: 0px;
 }
 .videos-videos{
     display: flex;
@@ -37,8 +26,5 @@
 }
 .ult-video-2{
     display: flex;
-}
-.aside{
-    display: none;
 }
 }

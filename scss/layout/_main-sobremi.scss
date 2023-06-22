@@ -1,5 +1,5 @@
 main{
-    overflow: z-index;
+    overflow-x: hidden;
 }
 .seccion-principal-sobremi{
     padding-top:60px;
@@ -10,11 +10,14 @@ main{
 .mis--trabajos{
     @include flex;
     justify-content: space-between;
+    padding: 10px;
 }
-
+.p-sobremi{
+    font-size: medium;
+}
 .billyemece{
     @include flex;
+    padding: 10px;
+    gap: 10px;
 }
-.h2-sobremi{
-    display:none;
-}
+

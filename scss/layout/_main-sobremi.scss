@@ -7,13 +7,19 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.sobre-mi{
+    padding: 10px 30px 10px 20px;
+}
+.mis-trabajos{
+    padding: 10px 30px 10px 20px;
+}
 .mis--trabajos{
     @include flex;
     justify-content: space-between;
     padding: 10px;
 }
 .p-sobremi{
-    font-size: medium;
+    font-size: large;
 }
 .billyemece{
     @include flex;
